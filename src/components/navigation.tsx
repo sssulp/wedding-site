@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-// import '../styles/styles.css';
+import '../styles/styles.css';
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -37,10 +37,10 @@ const Navigation: React.FC = () => {
           {/* menu items */}
           <ul className={`menu-list ${isOpen ? 'show' : ''}`}>
             <li>
-              <Link to="/event">Event</Link>
+              <Link to="/event">Itinerary</Link>
             </li>
             <li>
-              <Link to="/travel">Travel</Link>
+              <Link to="/travel">Getting Here</Link>
             </li>
             <li>
               <Link to="/lodging">Lodging</Link>

@@ -1,0 +1,134 @@
+.event-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.event-header {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.event-content {
+  position: relative;
+}
+
+/* Vertical line animation */
+.event-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 0; /* collapsed initially */
+  background-color: black;
+  transform: translateX(-50%);
+  transition: height 2s ease-in-out;
+}
+
+.event-content.line-active::before {
+  height: 100%; /* grows downward */
+}
+
+.event-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* Timeline item base styles */
+.event-content li {
+  width: 100%;
+  padding: 1rem 2rem;
+  position: relative;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  /* Start hidden for animation */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Reveal when active */
+.event-content li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Odd (left) positioning */
+.event-content li:nth-child(odd) {
+  left: -59.5%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Even (right) positioning */
+.event-content li:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* Connector lines start collapsed */
+.event-content li::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+.event-content li.active::before {
+  width: 25px; /* grows outward */
+}
+
+.event-content li:nth-child(odd)::before {
+  right: 0;
+}
+
+.event-content li:nth-child(even)::before {
+  left: 0;
+}
+
+.event-content ul li span {
+  padding: 0 10px;
+}
+
+.weddingRings {
+  width: 35%;
+}
+
+.cocktail-hour {
+  display: flex;
+  margin-left: 10px;
+}
+
+.icon {
+  width: 15%;
+  transform: rotate(8deg);
+}
+
+.cake-cutting {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+}
+
+.cake {
+  width: 22.5%;
+}
+
+.time {
+  font-weight: 700;
+}
