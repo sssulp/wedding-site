@@ -4,8 +4,6 @@ export { default as cake } from './cake.png';
 export { default as lunchService } from './waiter-service.png';
 export { default as bouquet } from './bouquet.png';
 export { default as gallery } from './gallery1.png';
-export { default as attire1Ladies } from './1.png';
-export { default as attire2Men } from './2.png';
 export { default as attire1 } from './attire-1.png';
 export { default as attire2 } from './attire-2.jpg';
 export { default as attire3 } from './attire-3.jpeg';
