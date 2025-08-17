@@ -1,6 +1,15 @@
+// general stuff
 @use './partials/general';
+@use './partials/normalize';
+@use './partials/typefont';
+
+// content styles
 @use './partials/navigation';
 @use './partials/home';
-@use './partials/normalize';
 @use './partials/event';
+@use './partials/attire';
 @use './partials/_travel';
+
+// responsive
+@use './partials/responsiveAttire';
+@use './partials/responsiveEvent';

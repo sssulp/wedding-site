@@ -4,15 +4,16 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  padding-bottom: 5rem;
+  background-color: #efebe2;
 }
 
 .event-header {
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px;
+  padding: 2rem 0;
 }
 
 .event-content {
@@ -27,7 +28,7 @@
   left: 50%;
   width: 1px;
   height: 0; /* collapsed initially */
-  background-color: black;
+  background-color: rgb(35, 35, 35);
   transform: translateX(-50%);
   transition: height 2s ease-in-out;
 }
@@ -37,55 +38,58 @@
 }
 
 .event-content ul {
+  width: 90%;
   list-style-type: none;
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-/* Timeline item base styles */
 .event-content li {
-  width: 100%;
+  width: 50%;
   padding: 1rem 2rem;
   position: relative;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
 
-  /* Start hidden for animation */
+  /* start hidden for animation */
   opacity: 0;
-  transform: scale(0.95);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Reveal when active */
+.event-content li p {
+  margin: 0px 5px;
+}
+
+/* reveal when active */
 .event-content li.active {
   opacity: 1;
   transform: scale(1);
 }
 
-/* Odd (left) positioning */
+/* left positioning */
 .event-content li:nth-child(odd) {
-  left: -59.5%;
+  left: -4.5%;
   text-align: right;
   display: flex;
   flex-direction: column;
 }
 
-/* Even (right) positioning */
+/* right positioning */
 .event-content li:nth-child(even) {
-  left: 50%;
+  left: 55.5%;
   text-align: left;
 }
 
-/* Connector lines start collapsed */
+/* connector lines start collapsed */
 .event-content li::before {
   content: '';
   position: absolute;
   top: 1.5rem;
   width: 0;
   height: 1px;
-  background-color: black;
+  background-color: rgb(35, 35, 35);
   transition: width 0.4s ease;
 }
 
@@ -102,33 +106,47 @@
 }
 
 .event-content ul li span {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .weddingRings {
-  width: 35%;
+  width: 50%;
 }
 
 .cocktail-hour {
   display: flex;
-  margin-left: 10px;
+  width: 100%;
 }
 
 .icon {
-  width: 15%;
+  width: 25%;
   transform: rotate(8deg);
 }
 
 .cake-cutting {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 10px;
+  width: 100%;
 }
 
 .cake {
-  width: 22.5%;
+  width: 50%;
 }
 
 .time {
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Red Hat Display';
+  font-size: 1.25rem;
+}
+
+.lunch {
+  position: absolute;
+  width: 65%;
+  top: 70%;
+}
+
+.bouquet {
+  position: absolute;
+  width: 35%;
+  bottom: 15%;
 }

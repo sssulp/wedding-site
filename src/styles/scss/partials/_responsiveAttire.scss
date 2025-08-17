@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+  .attire-text {
+    width: 75%;
+  }
+
+  .attire-examples1 {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .attire-examples1 img {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .attire-ladies p,
+  .attire-men p {
+    padding: 0;
+  }
+
+  .attire-men {
+    padding-bottom: 3.5rem;
+  }
+
+  .attire-ladies h4,
+  .attire-men h4 {
+    border-bottom: #23330e solid 1px;
+    width: 75%;
+  }
+}

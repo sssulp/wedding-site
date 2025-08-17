@@ -1,14 +1,146 @@
 .home-background {
   position: absolute;
   width: 100%;
-  height: 95vh;
-  background-color: rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  background-image: url('../assets/home-splash.jpg');
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
 }
 
-.home-splash {
-  height: 95vh;
-  width: 100%;
-  object-fit: cover;
+.bg-overlay {
   position: absolute;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.home-main {
+  height: 100vh;
+}
+
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.home-title h2 {
+  font-family: 'Cormorant Garamond';
+  text-transform: uppercase;
+  color: #fffff0;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.story h3 {
+  font-family: 'Cormorant Garamond';
+  text-transform: uppercase;
+  font-size: 2.1rem;
+}
+
+.story-details {
+  display: flex;
+  width: 100%;
+}
+
+.story-text {
+  width: 50%;
+}
+
+.story-text p {
+  padding-bottom: 1.5rem;
+}
+
+.story-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.form-body {
+  padding-bottom: 3.5rem;
+}
+
+.form-body h4 {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content p {
+  padding-bottom: 2.5rem;
+}
+
+.google-form {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.google-form:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+
+////////////
+// IMAGES //
+////////////
+
+.gallery {
+  width: 75%;
+}
+
+.tiff-andre-photo-1 {
+  width: 50%;
+  border-radius: 7px;
+}
+
+.parker-paw {
+  width: 50%;
+  border-radius: 7px;
+}
+
+@media (max-width: 450px) {
+  .story-details {
+    flex-direction: column;
+  }
+
+  .story-text {
+    width: 100%;
+  }
+
+  .story-images {
+    width: 100%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
 }

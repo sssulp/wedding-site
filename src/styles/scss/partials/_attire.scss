@@ -1,0 +1,106 @@
+.attire-home {
+  padding-top: 10rem;
+  width: 100%;
+  background-color: #efebe2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attire-title {
+  padding: 25px 0;
+}
+
+.attire-text {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid black;
+}
+
+.attire-gallery {
+  width: 100%;
+}
+
+.attire-gallery img {
+  width: 100%;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 3.5rem;
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 20%;
+  max-width: 220px;
+  min-width: 80px;
+}
+
+.circle1 {
+  background-color: #e7dbc5;
+}
+
+.circle2 {
+  background-color: #88776d;
+}
+
+.circle3 {
+  background-color: #23330e;
+}
+
+.circle4 {
+  background-color: #000;
+}
+
+.attire-ladies,
+.attire-men {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.attire-ladies h4,
+.attire-men h4 {
+  border-bottom: #23330e solid 1px;
+  width: 50%;
+  margin: 0 auto 3.5rem;
+  padding: 2.3rem 0;
+}
+
+.attire-ladies p,
+.attire-men p {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2.2rem;
+  font-size: 1.4rem;
+}
+
+.attire-examples1 {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+.attire-examples1 img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  // border-radius: 15px;
+  width: 30%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.attire-3 {
+  width: 50%;
+}

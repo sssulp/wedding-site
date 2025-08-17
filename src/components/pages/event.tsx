@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { weddingRingIcons, martini, cake } from '../../assets';
+import {
+  weddingRingIcons,
+  martini,
+  cake,
+  lunchService,
+  bouquet,
+} from '../../assets';
 import '../../styles/styles.css';
 
 const Event = () => {
@@ -59,45 +65,47 @@ const Event = () => {
           <ul>
             <li>
               <span className="time">09:30</span>
-              <span>Arrive at the Kahala Hotel Lobby</span>
+              <p>Arrive at the Kahala Hotel Lobby</p>
               <img src={''} />
             </li>
             <li>
               <span className="time">09:50</span>
-              <span>Guests to be seated</span>
+              <p>Guests to be seated</p>
             </li>
             <li>
               <span className="time">10:00</span>
-              <span>Ceremony begins</span>
+              <p>Ceremony begins</p>
+              <img src={bouquet} className="bouquet" />
             </li>
             <li>
               <span className="time">11:00</span>
               <div className="cocktail-hour">
-                Cocktail hour <img src={martini} className="icon" />
+                <p>Cocktail hour</p> <img src={martini} className="icon" />
               </div>
             </li>
             <li>
               <span className="time">11:40</span>
-              <span>Check in for Reception</span>
+              <p>Guests check in for Reception</p>
             </li>
             <li>
               <span className="time">12:15</span>
-              <span>Lunch service</span>
+              <p>Lunch service</p>
+              <img src={lunchService} className="lunch" />
             </li>
             <li>
               <span className="time">13:10</span>
               <div className="cake-cutting">
-                Cake cutting
+                <p>Cake cutting</p>
                 <img src={cake} className="cake" />
               </div>
             </li>
             <li>
               <span className="time">13:45</span>
-              <span>Open dance floor</span>
+              <p>Open dance floor</p>
             </li>
             <li>
               <span className="time">15:00</span>
-              <span>End of Reception</span>
+              <p>End of Reception</p>
             </li>
           </ul>
         </div>
