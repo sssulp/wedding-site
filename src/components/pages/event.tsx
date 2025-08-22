@@ -70,11 +70,11 @@ const Event = () => {
             </li>
             <li>
               <span className="time">09:50</span>
-              <p>Guests to be seated</p>
+              <p>Guests to be Seated</p>
             </li>
             <li>
               <span className="time">10:00</span>
-              <p>Ceremony begins</p>
+              <p>Ceremony Begins</p>
               <img src={bouquet} className="bouquet" />
             </li>
             <li>
@@ -85,23 +85,23 @@ const Event = () => {
             </li>
             <li>
               <span className="time">11:40</span>
-              <p>Guests check in for Reception</p>
+              <p>Guests Check-In for Reception</p>
             </li>
             <li>
               <span className="time">12:15</span>
-              <p>Lunch service</p>
+              <p>Lunch Service</p>
               <img src={lunchService} className="lunch" />
             </li>
             <li>
               <span className="time">13:10</span>
               <div className="cake-cutting">
-                <p>Cake cutting</p>
+                <p>Cake Cutting</p>
                 <img src={cake} className="cake" />
               </div>
             </li>
             <li>
               <span className="time">13:45</span>
-              <p>Open dance floor</p>
+              <p>Dance Floor Opens</p>
             </li>
             <li>
               <span className="time">15:00</span>

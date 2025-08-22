@@ -79,17 +79,17 @@ const Navigation: React.FC = () => {
           <ul className={`menu-list ${isOpen ? 'show' : ''}`}>
             <li>
               <Link to="/itinerary" onClick={closeMenu}>
-                Itinerary
+                The Itinerary
+              </Link>
+            </li>
+            <li>
+              <Link to="/attire" onClick={closeMenu}>
+                The Attire
               </Link>
             </li>
             <li>
               <Link to="/travel" onClick={closeMenu}>
                 Getting Here
-              </Link>
-            </li>
-            <li>
-              <Link to="/attire" onClick={closeMenu}>
-                Attire
               </Link>
             </li>
             <li>

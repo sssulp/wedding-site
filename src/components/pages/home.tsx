@@ -27,21 +27,22 @@ const Home: React.FC = () => {
               <div className="story-details">
                 <div className="story-text">
                   <p>
-                    After nearly seven years of dating, we finally are ready to
-                    take a step forward into our forever, always carrying
-                    Parker, our little best friend, who was there to see us
-                    grow. Who we will always miss, and be thankful for.
+                    After nearly seven years of dating, we are finally ready to
+                    take a step forward into our forever, always carrying our
+                    best friend Parker, who was there to see us grow.
                   </p>
                   <p>
-                    As this story of us continues forward, we face big life
-                    changes side-by-side: new jobs, new opportunities, and new
-                    dreams. We will continue to learn from each other, celebrate
-                    our life, and lean on one another during the longer days.
+                    As our story continues forward, we will face life's changes
+                    together: new jobs, new opportunities, and new dreams. In
+                    this adventure, we will continue to learn from each other,
+                    celebrate our growth, and lean on one another during the
+                    longer days.
                   </p>
                   <p>
                     Now, as we step into this exciting new chapter, we couldn't
-                    be more grateful for the journey that brought us here and
-                    the future we'll continue to build together.
+                    be more grateful for the journey that has brought us here,
+                    the family that have supported us, and the future we'll
+                    continue to build together.
                   </p>
                 </div>
                 <div className="story-images">
